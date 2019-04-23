@@ -1,0 +1,408 @@
+/* Banner */
+.cn-banner, .cn-banner *, .cn-modal, .cn-modal * {
+    box-sizing: border-box;
+}
+.cn-banner {
+    background: #121212;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 20px 0 12px 0;
+    transition: transform .6s ease .15s;
+    display: none;
+}
+.cn-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 34px 0 15px;
+}
+.cn-container p {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    font-size: 12px;
+    color: #858484;
+    flex: 1;
+    padding: 0 52px 0 16px;
+    margin: 0 0 16px 0;
+}
+.cn-container svg {
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+    max-width: 48px;
+    fill: #858484;
+    margin: 4px 0 0 0;
+}
+.cn-container > div {
+    flex: 0 0 158px;
+    max-width: 158px;
+}
+.cn-container button {
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    color: #fff;
+    padding: 0;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+    transition: background .5s;
+}
+.cn-container button:nth-of-type(2) {
+    margin-top: 5px;
+}
+#cn-accept {
+    font-size: 15px;
+    background: #3d3d3d;
+}
+#cn-settings {
+    font-size: 13px;
+    background: transparent;
+}
+#cn-settings:hover, #cn-settings:focus, #cn-settings:active {
+    background: #3d3d3d;
+}
+.cn-banner.cn-banner-hidden, .cn-init-fn {
+    transform: translateY(100%);
+    pointer-events: none;
+}
+/* Banner */
+
+/* Modal */
+.cn-modal-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .8s ease;
+}
+.cn-modal-wrap:before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 18, 18, 0.97);
+    position: fixed;
+}
+body.cn-modal-open {
+    overflow: hidden!important;
+}
+.cn-modal-open .cn-modal-wrap {
+    opacity: 1;
+    pointer-events: auto;
+}
+.cn-modal {
+    max-width: 1170px;
+    padding: 150px 0 80px 0;
+    margin: 0 auto;
+}
+.cn-modal input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.cn-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 12;
+}
+.cn-header span, .cn-decoration {
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 35px;
+    display: block;
+}
+.cn-header span {
+    color: #fff;
+    margin-bottom: 26px;
+}
+#cn-close {
+    padding: 5px;
+    margin: -5px -5px 0 0;
+    cursor: pointer;
+    background: transparent;
+    display: inline-flex;
+}
+#cn-close svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+}
+.cn-content {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 58px 5.6% 54px 6%;
+    position: relative;
+    z-index: 12;
+}
+.cn-option-wrap {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    position: relative;
+}
+.cn-option-wrap .cn-checkbox {
+    flex: 0 0 auto;
+    margin-top: 7px;
+}
+.cn-text {
+    flex: 1;
+    padding: 0 80px 0 19px;
+}
+.cn-option-list {
+    will-change: height, margin;
+    display: none;
+    margin-bottom: 35px;
+}
+.cn-option-title {
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 18px;
+}
+.cn-text p {
+    margin: 0 0 27px 0;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    font-size: 12px;
+    color: #858484;
+}
+.cn-details {
+    padding: 5px 20px 5px 5px;
+    margin: 4px 0 0 0;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    color: #fff;
+    cursor: pointer;
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    flex: 0 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.cn-details svg {
+    position: absolute;
+    display: block;
+    pointer-events: none;
+    right: 0;
+    fill: #fff;
+    fill-opacity: .7;
+    width: 10px;
+    height: 5px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0);
+    transition: .4s;
+}
+.cn-details-open .cn-details svg {
+    transform: translateY(-50%) rotate(-180deg);
+    fill-opacity: 1;
+}
+.cn-option-list th {
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.cn-option-list td {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    font-size: 12px;
+    color: #858484;
+    text-align: left;
+    vertical-align: top;
+}
+.cn-option-list tr th {
+    padding: 0 0 2px 0;
+}
+.cn-option-list tr th:first-child  {
+    width: 144px;
+}
+.cn-option-list tr th:nth-child(2)  {
+    width: 166px;
+}
+.cn-option-list tr td:nth-child(2), .cn-option-list tr td:nth-child(3) {
+    padding: 15px 0 5px 0;
+}
+
+.cn-option-list.cn-description-list tr th {
+    padding: 0 0 13px 0;
+}
+.cn-option-list.cn-description-list tr th:first-child {
+    width: 180px;
+    padding-right: 15px;
+}
+.cn-option-list.cn-description-list tr th:nth-child(2)  {
+    width: auto;
+}
+.cn-option-list.cn-description-list tr td:first-child {
+    padding: 0 15px 15px 0;
+}
+.cn-option-list.cn-description-list tr td:nth-child(2), .cn-option-list.cn-description-list tr td:nth-child(3) {
+    padding: 0 0 15px 0;
+}
+.cn-option-list.cn-description-list tr:not(:last-child) td {
+    padding: 0 0 15px 0;
+}
+#cn-save {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 16px;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 18px;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    margin-top: 24px;
+}
+.cn-decoration {
+    color: rgba(255, 255, 255, 0.1);
+    text-align: right;
+    margin-top: 20px;
+    position: relative;
+    z-index: 12;
+}
+.cn-option-wrap a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color .5s;
+    text-decoration: none;
+}
+.cn-option-wrap a:hover, .cn-option-wrap a:focus, .cn-option-wrap a:active {
+    text-decoration: none;
+    color: #fff;
+}
+/* Modal */
+
+/* Chechbox */
+.cn-checkbox input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 0;
+}
+.cn-trigger {
+    position: relative;
+    height: 20px;
+    width: 37px;
+    cursor: pointer;
+}
+.cn-trigger:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background: #fff;
+    opacity: 0.38;
+    border-radius: 7px;
+    width: 34px;
+    height: 14px;
+    transition: .2s;
+}
+.cn-trigger:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: #919191;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.12), 0 0 2px rgba(0, 0, 0, 0.14);
+    transition: .2s;
+}
+.cn-checkbox input:checked + .cn-trigger:after {
+    left: 18px;
+    background: #fff;
+}
+.cn-checkbox input:disabled + .cn-trigger {
+    cursor: not-allowed;
+}
+/* Chechbox */
+
+
+
+/* Response */
+@media (max-width: 1199px) {
+    .cn-modal {
+        max-width: 960px;
+    }
+}
+@media (max-width: 991px) {
+    .cn-modal {
+        max-width: 720px;
+    }
+}
+@media (max-width: 767px) {
+    .cn-modal {
+        max-width: 85%;
+    }
+    .cn-container svg {
+        display: none;
+    }
+    .cn-container p {
+        line-height: 13px;
+        font-size: 10px;
+    }
+    .cn-container {
+        display: block;
+    }
+    .cn-container > div {
+        display: flex;
+    }
+    .cn-container button {
+        flex: 0 0 auto;
+    }
+    .cn-container button:nth-of-type(2) {
+        margin: 0 0 0 5px;
+    }
+    #cn-settings, #cn-accept {
+        font-size: 12px;
+    }
+}
+@media (max-width: 375px) {
+    .cn-option-wrap {
+        display: block;
+    }
+    .cn-text {
+        padding-left: 0;
+    }
+}
+/* Response */
+
+
+
+
+
+
+
+
+

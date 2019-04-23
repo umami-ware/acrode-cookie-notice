@@ -1,0 +1,134 @@
+/* Tabs */
+.cn-tabs-caption {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+    margin-top: 0;
+}
+.form-table td fieldset .cn-tabs-caption li {
+    margin: 0;
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    color: #555;
+}
+.form-table td fieldset .cn-tabs-caption li:not(:last-child) {
+    height: 36px;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    background: #e5e5e5;
+    margin-left: 8px;
+    margin-bottom: -1px;
+    margin-top: 10px;
+}
+.form-table td fieldset .cn-tabs-caption li:last-child {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.form-table td fieldset .cn-tabs-caption li:not(:last-child):hover {
+    background: #fff;
+}
+.form-table td fieldset .cn-tabs-caption li.cn-active {
+    border-bottom: 1px solid #f1f1f1;
+    background: #f1f1f1!important;
+    color: #000;
+}
+.cn-remove-tab, .cn-add-tab button, .cn-remove-option {
+    border-radius: 100%;
+    border: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline: none!important;
+}
+.cn-remove-tab {
+    width: 20px;
+    height: 20px;
+    margin-left: 12px;
+    margin-right: -2px;
+}
+.cn-remove-tab svg {
+    width: 10px;
+    height: 10px;
+    fill: #5d6164;
+    pointer-events: none;
+}
+.cn-remove-tab:hover, .cn-remove-tab:hover, .cn-remove-tab:hover {
+    background: #dcdcdc;
+}
+.cn-add-tab button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.cn-add-tab button svg {
+    width: 12px;
+    height: 12px;
+    fill: #3b3f42;
+    pointer-events: none;
+}
+.cn-add-tab button:hover, .cn-add-tab button:hover, .cn-add-tab button:hover {
+    background: #dcdcdc;
+}
+.cn-tabs-content {
+    display: none;
+}
+.cn-tabs-content.cn-active {
+    display: block;
+}
+.form-table td .cn-label {
+    display: block;
+    margin: .5em 0 .25em;
+}
+.cn-tabs-content .regular-text, .cn-tabs-content textarea.large-text {
+    width: 100%;
+}
+.form-table td fieldset .cn-subtitle {
+    line-height: 1.3;
+    font-weight: 600;
+    color: #23282d;
+    font-size: 16px;
+    margin: .5em 0 .25em;
+}
+/* Tabs */
+
+/* Options */
+.cn-options-caption {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+.cn-options-caption > div {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.cn-option-list {
+    position: relative;
+    margin-top: 20px;
+}
+.cn-remove-option {
+    font-size: 14px;
+    color: #0073aa;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    display: none;
+}
+.cn-remove-option:hover, .cn-remove-option:focus, .cn-remove-option:active {
+    color: #00a0d2;
+}
+.cn-remove-option svg {
+    width: 10px;
+    height: 10px;
+}
+.cn-tabs-content > .cn-option-list ~ .cn-option-list .cn-remove-option {
+    display: block;
+}
+/* Options */
