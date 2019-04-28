@@ -95,7 +95,7 @@ class Cookie_Notice {
 
 	//Regiseter plugin settings.
 	public function register_settings() {
-		register_setting( 'cookie_notice_options', 'cookie_notice_options', array( $this, 'validate_options' ) );
+		register_setting( 'cookie_notice_options', 'cookie_notice_options', array( 'sanitize_callback' => array( $this, 'validate_options' ) ) );
 
 		//Сonfiguration
 		add_settings_section( 'cookie_notice_configuration', 'Plugin settings', array( $this, 'cn_section_configuration' ), 'cookie_notice_options' );
@@ -260,7 +260,7 @@ class Cookie_Notice {
             $script = "var cn_time = " . $input['time'] . ", cn_version = " . $input['version'] . ";\n";
             $script .= 'var cn_script = [';
 
-            foreach( $this->options['general']['tabs'] as $tab ) {
+            foreach( $input['tabs'] as $tab ) { //  $this->options['general']['tabs']
                 foreach( $tab['options'] as $option ) {
                     if( $option['script'] ){
                         $script .= '{';
