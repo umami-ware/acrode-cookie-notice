@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //Load scripts
     var cn_cookie = Cookies.getJSON( 'cn_'+cn_version );
     if(!cn_cookie) {
-        cnBanner.style.display = 'block'; 
+        cnBanner.classList.remove("cn-banner-hidden");
     } else {
         if( cn_cookie.cookie ){
             loadAllScripts();
