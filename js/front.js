@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
     window.acrode.initCookieNotification = function() {
         cnBanner.classList.remove("cn-init-fn");
     }
+    window.acrode.showCookieNotification = function() {
+        cnBanner.classList.remove("cn-banner-hidden");
+    }
     //On setting button click
     cnSettingBtn.addEventListener("click", function() {
         var _self = this;
@@ -121,6 +124,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 });
             } else {
+                Cookies.set('cn_'+cn_version, {
+                    'cookie': false
+                }, { expires: cn_time });
                 cnBanner.classList.add("cn-banner-hidden");
             }
         } else {
@@ -140,11 +146,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if( cn_cookie.cookie ){
             loadAllScripts();
         } else {
-            cn_script.forEach(function(script, index) {
-                if( cn_cookie.load.indexOf(index) >= 0 ) {
-                    loadAsync(script.link, script.callback );
-                }
-            });
+            if (cn_cookie.load) {
+                cn_script.forEach(function(script, index) {
+                    if( cn_cookie.load.indexOf(index) >= 0 ) {
+                        loadAsync(script.link, script.callback );
+                    }
+                });
+            }
         }
     }
 
