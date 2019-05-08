@@ -394,7 +394,7 @@ class Cookie_Notice {
 		wp_enqueue_script( 'cookie-notice-admin', plugins_url( 'js/admin.js', __FILE__ ), array( 'jquery' ), '1.0' );
 		wp_localize_script( 'cookie-notice-admin', 'cn_args', array( 'message' => 'Are you sure you want to reset these settings to defaults?' ) );
         //Style
-	    wp_enqueue_style( 'cookie-notice-admin', plugins_url( 'css/admin.css', __FILE__ ), array(), '1.0', false );
+	    wp_enqueue_style( 'cookie-notice-admin', plugins_url( 'css/admin.css', __FILE__ ), array(), '1.0' );
 	}
 
     //Load frontend scripts and styles.
@@ -403,7 +403,7 @@ class Cookie_Notice {
         wp_enqueue_script( 'cookie-notice-front', plugins_url( 'js/cookie.js', __FILE__ ), array(), $this->options['general']['version'], true );
 		wp_localize_script( 'cookie-notice-front', 'cn_args', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
         //Style
-		wp_enqueue_style( 'cookie-notice-front', plugins_url( 'css/front.css', __FILE__ ), array(), '1.0', false );
+		wp_enqueue_style( 'cookie-notice-front', plugins_url( 'css/front.css', __FILE__ ), array(), '1.0' );
 	}
 
 }
