@@ -9,7 +9,7 @@ var DOMAnimations={slideUp:function(e,t){return void 0===t&&(t=500),new Promise(
 // Async script loader
 function loadAsync(e,a){if(null==e)a();else{var n=document.createElement("script");n.async=!0,n.src=e,null!==a&&(n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,a())}:n.onload=function(){a()}),document.getElementsByTagName("head")[0].appendChild(n)}}
 //acrode cookie notification
-document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', function() {
 
     //Default variable
     var cnSettingBtn = document.getElementById("cn-settings"),
