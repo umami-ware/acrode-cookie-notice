@@ -100,6 +100,9 @@ window.addEventListener('load', function() {
 
     //On accept button click
     document.getElementById("cn-accept").addEventListener("click", function() {
+        Object.keys(Cookies.get()).forEach(function(cookie) {
+			Cookies.remove(cookie, { path: '' }); 
+		});
         if( document.getElementById("cn-save") ){
             var checked = [];
             Array.from(document.querySelectorAll(".cn-checkbox-sub")).forEach(function(chechbox, index) {
