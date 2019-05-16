@@ -1,6 +1,7 @@
 <?php
 /*
 Plugin Name: acrode Cookie Notice
+Plugin URI: https://github.com/JohannesMutz/acrode-cookie-notice
 Description: acrode Cookie Notice allows you to elegantly inform users that your site uses cookies. This plugin also helps website owners to comply with the EU cookie law.
 Version: 2.3.1
 Author: acrode
