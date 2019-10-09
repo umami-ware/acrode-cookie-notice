@@ -2,6 +2,10 @@
 .cn-banner, .cn-banner *, .cn-modal, .cn-modal * {
     box-sizing: border-box;
 }
+.cn-banner.cn-banner-hidden, .cn-init-fn {
+    transform: translateY(100%);
+    pointer-events: none;
+}
 .cn-banner {
     background: #121212;
     position: fixed;
@@ -67,10 +71,6 @@
 }
 #cn-settings:hover, #cn-settings:focus, #cn-settings:active {
     background: #3d3d3d;
-}
-.cn-banner.cn-banner-hidden, .cn-init-fn {
-    transform: translateY(100%);
-    pointer-events: none;
 }
 /* Banner */
 
