@@ -3,8 +3,8 @@
     box-sizing: border-box;
 }
 .cn-banner.cn-banner-hidden, .cn-init-fn {
-    transform: translateY(100%);
-    pointer-events: none;
+    transform: translateY(100%) !important;
+    pointer-events: none !important;
 }
 .cn-banner {
     background: #121212;
