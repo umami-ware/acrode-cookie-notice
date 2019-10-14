@@ -159,7 +159,4 @@ window.addEventListener('load', function() {
             }
         }
     }
-    // Create a new acrodeCookieNoticeInitialized event
-    var event = new CustomEvent('acrodeCookieNoticeInitialized');
-    window.dispatchEvent(event); // Dispatch the event on the window
 });
