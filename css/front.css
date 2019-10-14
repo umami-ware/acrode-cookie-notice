@@ -117,7 +117,7 @@ body.cn-modal-open {
     position: relative;
     z-index: 12;
 }
-.cn-header span, .cn-decoration {
+.cn-header span {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -278,13 +278,6 @@ body.cn-modal-open {
     background: rgba(255, 255, 255, 0.2);
     cursor: pointer;
     margin-top: 24px;
-}
-.cn-decoration {
-    color: rgba(255, 255, 255, 0.1);
-    text-align: right;
-    margin-top: 20px;
-    position: relative;
-    z-index: 12;
 }
 .cn-option-wrap a {
     color: rgba(255, 255, 255, 0.7);
