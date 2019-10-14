@@ -377,7 +377,6 @@ class Cookie_Notice {
                         $output .= '
                             <button id="cn-save">' . $this->options['general']['save_text'] . '</button>
                         </div>
-                        <span class="cn-decoration">&lt;Cookie settings/&gt;</span>
                     </div>';
 
         echo $output;
