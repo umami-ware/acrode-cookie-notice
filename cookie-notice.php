@@ -234,7 +234,7 @@ class Cookie_Notice {
 	public function cn_show_on_function_call() {
 		echo '
 		<fieldset>
-			<label><input id="cn_show_on_function_call" type="checkbox" name="cookie_notice_options[show_on_function_call]" value="1" ' . checked( 'yes', $this->options['general']['show_on_function_call'], false ) . '/>Enable if you want to show the cookie notification only after calling a JavaScript function (<code>window.acrode.initCookieNotification</code>).</label>
+			<label><input id="cn_show_on_function_call" type="checkbox" name="cookie_notice_options[show_on_function_call]" value="1" ' . checked( 'yes', $this->options['general']['show_on_function_call'], false ) . '/>Enable if you want to show the cookie notification only after calling a JavaScript function (<code>window.acrode.initCookieNotification</code>). <code>acrodeCookieNoticeInitialized</code> is fired after the Plugin is initialized.</label>
 		</fieldset>';
 	}
 
