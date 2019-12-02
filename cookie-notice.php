@@ -3,10 +3,14 @@
 Plugin Name: Cookie Notice
 Plugin URI: https://github.com/JohannesArtmeier/acrode-cookie-notice
 Description: acrode Cookie Notice allows you to elegantly inform users that your site uses cookies. This plugin also helps website owners to comply with the EU cookie law.
-Version: 2.5.5
+Version: 2.8.0
 Author: acrode
 Author URI: https://acrode.com
 */
+
+//Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) )
+    exit;
 
 // https://github.com/YahnisElsts/plugin-update-checker v.4.8.1
 require __DIR__ . '/plugin-update-checker/plugin-update-checker.php';
@@ -16,16 +20,30 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	'acrode-cookie-notice'
 );
 
-//Exit if accessed directly
-if ( ! defined( 'ABSPATH' ) )
-    exit;
-
 $acDialogHeadingName = '&lt;Cookie settings/&gt';
 $acIconSvg = '<svg xmlns="http://www.w3.org/2000/svg"><path d="M16.8 0C7.5 0 0 7.5 0 16.8c0 8.5 6.2 15.5 14.6 16.6 1 8.2 8 14.6 16.6 14.6C40.5 48 48 40.5 48 31.2v-1.7c0-.2-.1-.4-.3-.5s-.4-.2-.6-.2c-.2 0-.4.1-.6.1a4 4 0 0 1-4-3.5c0-.3-.3-.6-.6-.7-2.5-.6-4.2-3-4.2-5.4V19c0-.3-.2-.7-.5-.8-.6-.2-1-.8-1-1.5 0-.2.1-.5.2-.7.1-.2.1-.5 0-.7s-.3-.4-.5-.4l-2.2-.5C32.3 6.2 25.3 0 16.8 0zm0 1.6c7.6 0 14 5.4 15 12.8h-.6c-9.3 0-16.8 7.5-16.8 16.8v.6C7 30.7 1.6 24.4 1.6 16.8c0-8.4 6.8-15.2 15.2-15.2zm-6.4 3.2c-.4 0-.8.4-.8.8v3.2c0 .4.4.8.8.8h3.2c.4 0 .8-.4.8-.8V5.6c0-.4-.4-.8-.8-.8h-3.2zm.8 1.6h1.6V8h-1.6V6.4zM17.6 8c-.4 0-.8.4-.8.8s.4.8.8.8.8.4.8.8.4.8.8.8.8-.4.8-.8C20 9 19 8 17.6 8zm5.6 0c-.4 0-.8.4-.8.8V12c0 .4.4.8.8.8h3.2c.4 0 .8-.4.8-.8V8.8c0-.4-.4-.8-.8-.8h-3.2zm.8 1.6h1.6v1.6H24V9.6zM6.4 11.2c-.4 0-.8.4-.8.8s.4.8.8.8.8.4.8.8.4.8.8.8.8-.4.8-.8c0-1.3-1-2.4-2.4-2.4zm11.2 3.2c-1.3 0-2.4 1-2.4 2.4 0 .4.4.8.8.8s.8-.4.8-.8.4-.8.8-.8.8-.4.8-.8-.4-.8-.8-.8zM31.2 16h0c.4 0 1 0 1.4.1.6.1 1.2.1 1.8.3 0 .1 0 .3 0 .4 0 1.2.6 2.2 1.6 2.8.1 3 2 5.5 5 6.5.6 2.5 2.8 4.4 5.4 4.4v.8c0 8.4-6.8 15.2-15.2 15.2-8 0-14.4-6-15-13.7 0-.5-.1-1-.1-1.5 0-2 .4-4 1.2-6 2.3-5.5 7.7-9.3 14-9.3zm-20.8 3.2c-1.8 0-3.2 1.4-3.2 3.2s1.4 3.2 3.2 3.2 3.2-1.4 3.2-3.2-1.4-3.2-3.2-3.2zm0 1.6c1 0 1.6.7 1.6 1.6s-.7 1.6-1.6 1.6-1.6-.7-1.6-1.6.7-1.6 1.6-1.6zm19.2 0c-.4 0-.8.4-.8.8s.4.8.8.8.8.4.8.8.4.8.8.8.8-.4.8-.8c0-1.3-1-2.4-2.4-2.4zM24 24c-1.8 0-3.2 1.4-3.2 3.2s1.4 3.2 3.2 3.2 3.2-1.4 3.2-3.2S25.8 24 24 24zm0 1.6c1 0 1.6.7 1.6 1.6s-.7 1.6-1.6 1.6-1.6-.7-1.6-1.6.7-1.6 1.6-1.6zm8 1.6c-.4 0-.8.4-.8.8v3.2c0 .4.4.8.8.8h3.2c.4 0 .8-.4.8-.8V28c0-.4-.4-.8-.8-.8H32zm.8 1.6h1.6v1.6h-1.6v-1.6zm6.4 3.2c-.4 0-.8.4-.8.8s.4.8.8.8.8.4.8.8.4.8.8.8.8-.4.8-.8c0-1.3-1-2.4-2.4-2.4zm-17.6 2.4c-.4 0-.8.4-.8.8s.4.8.8.8.8.4.8.8.4.8.8.8.8-.4.8-.8c0-1.3-1-2.4-2.4-2.4zm8 3.2c-1.8 0-3.2 1.4-3.2 3.2s1.4 3.2 3.2 3.2 3.2-1.4 3.2-3.2-1.4-3.2-3.2-3.2zm8.8.8c-1.3 0-2.4 1-2.4 2.4 0 .4.4.8.8.8s.8-.4.8-.8.4-.8.8-.8.8-.4.8-.8-.4-.8-.8-.8zm-8.8.8c1 0 1.6.7 1.6 1.6s-.7 1.6-1.6 1.6-1.6-.7-1.6-1.6.7-1.6 1.6-1.6z"></path></svg>';
 is_file(ABSPATH . 'wp-content/acrode/acrode-cookie-notice/settings.php') && require ABSPATH . 'wp-content/acrode/acrode-cookie-notice/settings.php';
 
 //Set plugin instance
 $cookie_notice = new Cookie_Notice();
+
+//Store after Update
+function wp_upe_upgrade_completed( $upgrader_object, $options ) {
+    global $cookie_notice;
+    // The path to our plugin's main file
+    $our_plugin = plugin_basename( __FILE__ );
+    // If an update has taken place and the updated type is plugins and the plugins element exists
+    if( $options['action'] == 'update' && $options['type'] == 'plugin' && isset( $options['plugins'] ) ) {
+        // Iterate through the plugins being updated and check if ours is there
+        foreach( $options['plugins'] as $plugin ) {
+            if( $plugin == $our_plugin ) {
+                $cookie_notice->generate_cookie_file();
+                break;
+            }
+        }
+    }
+}
+add_action( 'upgrader_process_complete', 'wp_upe_upgrade_completed', 10, 2 );
 
 //Cookie Notice class.
 class Cookie_Notice {
@@ -248,7 +266,51 @@ class Cookie_Notice {
 		<fieldset>
 			<label><input id="cn_show_on_function_call" type="checkbox" name="cookie_notice_options[show_on_function_call]" value="1" ' . checked( 'yes', $this->options['general']['show_on_function_call'], false ) . '/>Enable if you want to show the cookie notification only after calling a JavaScript function (<code>window.acrode.initCookieNotification</code>).</label>
         </fieldset>';
-	}
+    }
+    
+    public function generate_cookie_file() {
+        $this->save_cookie_file(time(), $this->options['general']['time'], $this->options['general']['tabs']);
+    }
+
+    private function save_cookie_file($version, $time, $tabs) {
+        //Create js
+        $script = "var cn_time = " . $time . ", cn_version = " .  $version . ";\n";
+        $script .= 'var cn_script = [';
+
+        foreach( $tabs as $tab ) { //  $this->options['general']['tabs']
+            foreach( $tab['options'] as $option ) {
+                if( $option['script'] ){
+                    $script .= '{';
+
+                    //Script with src
+                    preg_match_all('#<script.*?src=+(.*?)><\/script>#is', $option['script'], $src);
+                    if( $src[1][0] ) {
+                        $script .= 'link: ' . $src[1][0] . ',';
+                    } else {
+                        $script .= 'link: null,';
+                    }
+
+                    //Inline script callback
+                    preg_match_all('#<script>(.*?)<\/script>#is', $option['script'], $scr);
+                    if( $scr[1][0] ) {
+                        $script .= 'callback: function(){' . trim(preg_replace('/\s\s+/', ' ', $scr[1][0])) . '}';
+                    } else {
+                        $script .= 'callback: null';
+                    }
+
+                    $script .= '},';
+                }
+            }
+        }
+
+        $script .= "];\n";
+
+        $generate_js = plugin_dir_path(__FILE__) . 'js/cookie.js';
+        file_put_contents( $generate_js, $script );
+
+        $static_js = file_get_contents( plugin_dir_path(__FILE__) . 'js/front.js' );
+        file_put_contents( $generate_js, $static_js, FILE_APPEND | LOCK_EX );
+    }
 
     //Validate options.
 	public function validate_options( $input ) {
@@ -264,48 +326,13 @@ class Cookie_Notice {
             $input['version'] = time();
 
 			//Deactivation
-            $input['deactivation_delete'] = (bool) isset( $input['deactivation_delete'] ) ? 'yes' : 'no';
+            $input['deactivation_delete'] = isset( $input['deactivation_delete'] ) ? 'yes' : 'no';
             
             //Show cookie notification only after calling a function
-			$input['show_on_function_call'] = (bool) isset( $input['show_on_function_call'] ) ? 'yes' : 'no';
+			$input['show_on_function_call'] = isset( $input['show_on_function_call'] ) ? 'yes' : 'no';
 
             //Create js
-            $script = "var cn_time = " . $input['time'] . ", cn_version = " . $input['version'] . ";\n";
-            $script .= 'var cn_script = [';
-
-            foreach( $input['tabs'] as $tab ) { //  $this->options['general']['tabs']
-                foreach( $tab['options'] as $option ) {
-                    if( $option['script'] ){
-                        $script .= '{';
-
-                        //Script with src
-                        preg_match_all('#<script.*?src=+(.*?)><\/script>#is', $option['script'], $src);
-                        if( $src[1][0] ) {
-                            $script .= 'link: ' . $src[1][0] . ',';
-                        } else {
-                            $script .= 'link: null,';
-                        }
-
-                        //Inline script callback
-                        preg_match_all('#<script>(.*?)<\/script>#is', $option['script'], $scr);
-                        if( $scr[1][0] ) {
-                            $script .= 'callback: function(){' . trim(preg_replace('/\s\s+/', ' ', $scr[1][0])) . '}';
-                        } else {
-                            $script .= 'callback: null';
-                        }
-
-                        $script .= '},';
-                    }
-                }
-            }
-
-            $script .= "];\n";
-
-            $generate_js = plugin_dir_path(__FILE__) . 'js/cookie.js';
-            file_put_contents( $generate_js, $script );
-
-            $static_js = file_get_contents( plugin_dir_path(__FILE__) . 'js/front.js' );
-            file_put_contents( $generate_js, $static_js, FILE_APPEND | LOCK_EX );
+            $this->save_cookie_file($input['version'], $input['time'], $input['tabs']);
 
 		} elseif ( isset( $_POST['reset_cookie_notice_options'] ) ) {
 			$input = $this->defaults['general'];
