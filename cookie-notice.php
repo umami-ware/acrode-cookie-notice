@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: acrode Cookie Notice
+Plugin Name: Cookie Notice
 Plugin URI: https://github.com/JohannesArtmeier/acrode-Cookie-Notice-Plugin
 Description: acrode Cookie Notice allows you to elegantly inform users that your site uses cookies. This plugin also helps website owners to comply with the EU cookie law.
 Version: 2.4.0
@@ -8,9 +8,21 @@ Author: acrode
 Author URI: https://acrode.com
 */
 
+// https://github.com/YahnisElsts/plugin-update-checker v.4.8.1
+require __DIR__ . '/plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://wordpress.acrode.com/wp-update-server/?action=get_metadata&slug=acrode-cookie-notice',
+	__FILE__, //Full path to the main plugin file or functions.php.
+	'acrode-cookie-notice'
+);
+
 //Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) )
     exit;
+
+$acDialogName = '&lt;Cookie settings/&gt';
+$acIcon = '<svg xmlns="http://www.w3.org/2000/svg"><path d="M16.8 0C7.5 0 0 7.5 0 16.8c0 8.5 6.2 15.5 14.6 16.6 1 8.2 8 14.6 16.6 14.6C40.5 48 48 40.5 48 31.2v-1.7c0-.2-.1-.4-.3-.5s-.4-.2-.6-.2c-.2 0-.4.1-.6.1a4 4 0 0 1-4-3.5c0-.3-.3-.6-.6-.7-2.5-.6-4.2-3-4.2-5.4V19c0-.3-.2-.7-.5-.8-.6-.2-1-.8-1-1.5 0-.2.1-.5.2-.7.1-.2.1-.5 0-.7s-.3-.4-.5-.4l-2.2-.5C32.3 6.2 25.3 0 16.8 0zm0 1.6c7.6 0 14 5.4 15 12.8h-.6c-9.3 0-16.8 7.5-16.8 16.8v.6C7 30.7 1.6 24.4 1.6 16.8c0-8.4 6.8-15.2 15.2-15.2zm-6.4 3.2c-.4 0-.8.4-.8.8v3.2c0 .4.4.8.8.8h3.2c.4 0 .8-.4.8-.8V5.6c0-.4-.4-.8-.8-.8h-3.2zm.8 1.6h1.6V8h-1.6V6.4zM17.6 8c-.4 0-.8.4-.8.8s.4.8.8.8.8.4.8.8.4.8.8.8.8-.4.8-.8C20 9 19 8 17.6 8zm5.6 0c-.4 0-.8.4-.8.8V12c0 .4.4.8.8.8h3.2c.4 0 .8-.4.8-.8V8.8c0-.4-.4-.8-.8-.8h-3.2zm.8 1.6h1.6v1.6H24V9.6zM6.4 11.2c-.4 0-.8.4-.8.8s.4.8.8.8.8.4.8.8.4.8.8.8.8-.4.8-.8c0-1.3-1-2.4-2.4-2.4zm11.2 3.2c-1.3 0-2.4 1-2.4 2.4 0 .4.4.8.8.8s.8-.4.8-.8.4-.8.8-.8.8-.4.8-.8-.4-.8-.8-.8zM31.2 16h0c.4 0 1 0 1.4.1.6.1 1.2.1 1.8.3 0 .1 0 .3 0 .4 0 1.2.6 2.2 1.6 2.8.1 3 2 5.5 5 6.5.6 2.5 2.8 4.4 5.4 4.4v.8c0 8.4-6.8 15.2-15.2 15.2-8 0-14.4-6-15-13.7 0-.5-.1-1-.1-1.5 0-2 .4-4 1.2-6 2.3-5.5 7.7-9.3 14-9.3zm-20.8 3.2c-1.8 0-3.2 1.4-3.2 3.2s1.4 3.2 3.2 3.2 3.2-1.4 3.2-3.2-1.4-3.2-3.2-3.2zm0 1.6c1 0 1.6.7 1.6 1.6s-.7 1.6-1.6 1.6-1.6-.7-1.6-1.6.7-1.6 1.6-1.6zm19.2 0c-.4 0-.8.4-.8.8s.4.8.8.8.8.4.8.8.4.8.8.8.8-.4.8-.8c0-1.3-1-2.4-2.4-2.4zM24 24c-1.8 0-3.2 1.4-3.2 3.2s1.4 3.2 3.2 3.2 3.2-1.4 3.2-3.2S25.8 24 24 24zm0 1.6c1 0 1.6.7 1.6 1.6s-.7 1.6-1.6 1.6-1.6-.7-1.6-1.6.7-1.6 1.6-1.6zm8 1.6c-.4 0-.8.4-.8.8v3.2c0 .4.4.8.8.8h3.2c.4 0 .8-.4.8-.8V28c0-.4-.4-.8-.8-.8H32zm.8 1.6h1.6v1.6h-1.6v-1.6zm6.4 3.2c-.4 0-.8.4-.8.8s.4.8.8.8.8.4.8.8.4.8.8.8.8-.4.8-.8c0-1.3-1-2.4-2.4-2.4zm-17.6 2.4c-.4 0-.8.4-.8.8s.4.8.8.8.8.4.8.8.4.8.8.8.8-.4.8-.8c0-1.3-1-2.4-2.4-2.4zm8 3.2c-1.8 0-3.2 1.4-3.2 3.2s1.4 3.2 3.2 3.2 3.2-1.4 3.2-3.2-1.4-3.2-3.2-3.2zm8.8.8c-1.3 0-2.4 1-2.4 2.4 0 .4.4.8.8.8s.8-.4.8-.8.4-.8.8-.8.8-.4.8-.8-.4-.8-.8-.8zm-8.8.8c1 0 1.6.7 1.6 1.6s-.7 1.6-1.6 1.6-1.6-.7-1.6-1.6.7-1.6 1.6-1.6z"></path></svg>';
+is_file(ABSPATH . 'wp-content/acrode/acrode-cookie-notice/settings.php') && require ABSPATH . 'wp-content/acrode/acrode-cookie-notice/settings.php';
 
 //Set plugin instance
 $cookie_notice = new Cookie_Notice();
@@ -305,10 +317,11 @@ class Cookie_Notice {
 
     //Cookie notice output.
     public function add_cookie_notice() {
+        global $acIcon;
         echo '
         <div class="cn-banner-hidden' . ( $this->options['general']['show_on_function_call'] === 'yes' ? ' cn-init-fn' : '' ) . ' cn-banner" role="banner">
             <div class="cn-container">
-                <svg xmlns="http://www.w3.org/2000/svg"><path d="M16.8 0C7.5 0 0 7.5 0 16.8c0 8.5 6.2 15.5 14.6 16.6 1 8.2 8 14.6 16.6 14.6C40.5 48 48 40.5 48 31.2v-1.7c0-.2-.1-.4-.3-.5s-.4-.2-.6-.2c-.2 0-.4.1-.6.1a4 4 0 0 1-4-3.5c0-.3-.3-.6-.6-.7-2.5-.6-4.2-3-4.2-5.4V19c0-.3-.2-.7-.5-.8-.6-.2-1-.8-1-1.5 0-.2.1-.5.2-.7.1-.2.1-.5 0-.7s-.3-.4-.5-.4l-2.2-.5C32.3 6.2 25.3 0 16.8 0zm0 1.6c7.6 0 14 5.4 15 12.8h-.6c-9.3 0-16.8 7.5-16.8 16.8v.6C7 30.7 1.6 24.4 1.6 16.8c0-8.4 6.8-15.2 15.2-15.2zm-6.4 3.2c-.4 0-.8.4-.8.8v3.2c0 .4.4.8.8.8h3.2c.4 0 .8-.4.8-.8V5.6c0-.4-.4-.8-.8-.8h-3.2zm.8 1.6h1.6V8h-1.6V6.4zM17.6 8c-.4 0-.8.4-.8.8s.4.8.8.8.8.4.8.8.4.8.8.8.8-.4.8-.8C20 9 19 8 17.6 8zm5.6 0c-.4 0-.8.4-.8.8V12c0 .4.4.8.8.8h3.2c.4 0 .8-.4.8-.8V8.8c0-.4-.4-.8-.8-.8h-3.2zm.8 1.6h1.6v1.6H24V9.6zM6.4 11.2c-.4 0-.8.4-.8.8s.4.8.8.8.8.4.8.8.4.8.8.8.8-.4.8-.8c0-1.3-1-2.4-2.4-2.4zm11.2 3.2c-1.3 0-2.4 1-2.4 2.4 0 .4.4.8.8.8s.8-.4.8-.8.4-.8.8-.8.8-.4.8-.8-.4-.8-.8-.8zM31.2 16h0c.4 0 1 0 1.4.1.6.1 1.2.1 1.8.3 0 .1 0 .3 0 .4 0 1.2.6 2.2 1.6 2.8.1 3 2 5.5 5 6.5.6 2.5 2.8 4.4 5.4 4.4v.8c0 8.4-6.8 15.2-15.2 15.2-8 0-14.4-6-15-13.7 0-.5-.1-1-.1-1.5 0-2 .4-4 1.2-6 2.3-5.5 7.7-9.3 14-9.3zm-20.8 3.2c-1.8 0-3.2 1.4-3.2 3.2s1.4 3.2 3.2 3.2 3.2-1.4 3.2-3.2-1.4-3.2-3.2-3.2zm0 1.6c1 0 1.6.7 1.6 1.6s-.7 1.6-1.6 1.6-1.6-.7-1.6-1.6.7-1.6 1.6-1.6zm19.2 0c-.4 0-.8.4-.8.8s.4.8.8.8.8.4.8.8.4.8.8.8.8-.4.8-.8c0-1.3-1-2.4-2.4-2.4zM24 24c-1.8 0-3.2 1.4-3.2 3.2s1.4 3.2 3.2 3.2 3.2-1.4 3.2-3.2S25.8 24 24 24zm0 1.6c1 0 1.6.7 1.6 1.6s-.7 1.6-1.6 1.6-1.6-.7-1.6-1.6.7-1.6 1.6-1.6zm8 1.6c-.4 0-.8.4-.8.8v3.2c0 .4.4.8.8.8h3.2c.4 0 .8-.4.8-.8V28c0-.4-.4-.8-.8-.8H32zm.8 1.6h1.6v1.6h-1.6v-1.6zm6.4 3.2c-.4 0-.8.4-.8.8s.4.8.8.8.8.4.8.8.4.8.8.8.8-.4.8-.8c0-1.3-1-2.4-2.4-2.4zm-17.6 2.4c-.4 0-.8.4-.8.8s.4.8.8.8.8.4.8.8.4.8.8.8.8-.4.8-.8c0-1.3-1-2.4-2.4-2.4zm8 3.2c-1.8 0-3.2 1.4-3.2 3.2s1.4 3.2 3.2 3.2 3.2-1.4 3.2-3.2-1.4-3.2-3.2-3.2zm8.8.8c-1.3 0-2.4 1-2.4 2.4 0 .4.4.8.8.8s.8-.4.8-.8.4-.8.8-.8.8-.4.8-.8-.4-.8-.8-.8zm-8.8.8c1 0 1.6.7 1.6 1.6s-.7 1.6-1.6 1.6-1.6-.7-1.6-1.6.7-1.6 1.6-1.6z"></path></svg>
+                ' . $acIcon . '
                 <p>' . $this->options['general']['message_text'] . '</p>
                 <div>
                     <button type="button" id="cn-accept">' . $this->options['general']['accept_text'] . '</button>
@@ -320,10 +333,11 @@ class Cookie_Notice {
 
     //Ajax modal loader.
     public function modal_loader() {
+        global $acDialogName;
         $output = '
                     <div class="cn-modal">
                         <div class="cn-header">
-                            <span>&lt;Cookie settings/&gt;</span>
+                            <span>' . $acDialogName . '</span>
                             <button id="cn-close"><svg xmlns="http://www.w3.org/2000/svg"><path d="M 20,2 18,0 10,8 2,0 0,2 l 8,8 -8,8 2,2 8,-8 8,8 2,-2 -8,-8 z"></path></svg></button>
                         </div>
                         <div class="cn-content">';
@@ -403,7 +417,11 @@ class Cookie_Notice {
         wp_enqueue_script( 'cookie-notice-front', plugins_url( 'js/cookie.js', __FILE__ ), array(), $this->options['general']['version'], true );
 		wp_localize_script( 'cookie-notice-front', 'cn_args', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
         //Style
-		wp_enqueue_style( 'cookie-notice-front', plugins_url( 'css/front.css', __FILE__ ), array(), '1.0' );
+        if (is_file(ABSPATH . 'wp-content/acrode/acrode-cookie-notice/front.css')) {
+            wp_enqueue_style( 'cookie-notice-front', '/wp-content/acrode/acrode-cookie-notice/front.css', array(), '1.0' );
+        } else {
+            wp_enqueue_style( 'cookie-notice-front', plugins_url( 'css/front.css', __FILE__ ), array(), '1.0' );
+        }
 	}
 
 }
