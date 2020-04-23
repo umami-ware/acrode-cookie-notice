@@ -25,7 +25,11 @@ Feel free to **file a new issue** with a respective title and description on the
 
 ## 🤝&nbsp; Contributions
 
-We are committed to a fully transparent development process and **highly appreciate any contributions**. Whether you are helping us fixing bugs, proposing new feature, improving our documentation.
+We are committed to a fully transparent development process and **highly appreciate any contributions**. Contributions, issues and feature requests are welcome. Whether you are helping us fixing bugs, proposing new feature, improving our documentation.... 🎉
+
+## ❤️&nbsp; Show your support
+
+Please ⭐️ this repository if this project helped you!
 
 ## 📝 License
 
