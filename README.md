@@ -26,7 +26,7 @@ Feel free to **file a new issue** with a respective title and description on the
 ## ❤️&nbsp; Contributions
 
 We are committed to a fully transparent development process and **highly appreciate any contributions**. Whether you are helping us fixing bugs, proposing new feature, improving our documentation.
-This plugin uses [Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker/).
+This plugin uses [Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker/). Please see [license.txt](https://github.com/YahnisElsts/plugin-update-checker/blob/master/license.txt).
 
 ## 📝 License
 
