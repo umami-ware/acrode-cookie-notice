@@ -19,11 +19,11 @@ wp-content/acrode/acrode-cookie-notice
 
 We are happy to get your emails in our official [Microsoft Teams channel](fc8035ad.acrode.com@de.teams.ms)! Obviously you can always **reach out to us directly** via the [Acrode twitter account](https://twitter.com/Acrode_UW).
 
-## 🤝&nbsp; Found a bug? Missing a specific feature?
+## 🐞&nbsp; Found a bug? Missing a specific feature?
 
 Feel free to **file a new issue** with a respective title and description on the the [umami-ware/acrode-cookie-notice](https://github.com/umami-ware/cookie-notice/issues) repository. If you already found a solution to your problem, **we would love to review your pull request**!
 
-## ❤️&nbsp; Contributions
+## 🤝&nbsp; Contributions
 
 We are committed to a fully transparent development process and **highly appreciate any contributions**. Whether you are helping us fixing bugs, proposing new feature, improving our documentation.
 
