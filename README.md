@@ -1,16 +1,32 @@
-# acrode-cookie-notice
+# Acrode Cookie Notice for WordPress
 
 Update slug name: acrode-cookie-notice (update with https://github.com/YahnisElsts/wp-update-server)
 
-# Note
+## ✅&nbsp; Requirements
+Cookie Notice requires a **WordPress Instlattion with version X.X or higher** and **PHP version higher or equal to 7.2**
 
-To overwrite Settings and style:
+## 🚀&nbsp; Installation and Documentation
+
+To overwrite Settings and styles:
 wp-content/acrode/acrode-cookie-notice
 1. settings.php
   $acDialogHeadingName = 'Cookie-Einstellungen';
   $acIconSvg = '';
 2. front.css
   To replace original front.css
+  
+## 📫&nbsp; Have a question? Want to chat? Ran into a problem?
+
+We are happy to get your emails in our official [Microsoft Teams channel](fc8035ad.acrode.com@de.teams.ms)! Obviously you can always **reach out to us directly** via the [Acrode twitter account](https://twitter.com/Acrode_UW).
+
+## 🤝&nbsp; Found a bug? Missing a specific feature?
+
+Feel free to **file a new issue** with a respective title and description on the the [umami-ware/acrode-cookie-notice](https://github.com/umami-ware/cookie-notice/issues) repository. If you already found a solution to your problem, **we would love to review your pull request**!
+
+## ❤️&nbsp; Contributions
+
+We are committed to a fully transparent development process and **highly appreciate any contributions**. Whether you are helping us fixing bugs, proposing new feature, improving our documentation.
+This plugin uses [Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker/).
 
 ## 📝 License
 
