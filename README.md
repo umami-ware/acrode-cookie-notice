@@ -17,7 +17,7 @@ wp-content/acrode/acrode-cookie-notice
   
 ## 📫&nbsp; Have a question? Want to chat? Ran into a problem?
 
-We are happy to get your emails in our official [Microsoft Teams channel](mailto:fc8035ad.acrode.com@de.teams.ms)! Obviously you can always **reach out to us directly** via the [Acrode twitter account](https://twitter.com/Acrode_UW).
+We are happy to get your emails in our official [Microsoft Teams channel](mailto:fc8035ad.acrode.com@de.teams.ms?subject=[GitHub Help])! Obviously you can always **reach out to us directly** via the [Acrode twitter account](https://twitter.com/Acrode_UW).
 
 ## 🐞&nbsp; Found a bug? Missing a specific feature?
 
