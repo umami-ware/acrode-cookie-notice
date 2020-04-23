@@ -26,10 +26,11 @@ Feel free to **file a new issue** with a respective title and description on the
 ## ❤️&nbsp; Contributions
 
 We are committed to a fully transparent development process and **highly appreciate any contributions**. Whether you are helping us fixing bugs, proposing new feature, improving our documentation.
-This plugin uses [Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker/). Please see [license.txt](https://github.com/YahnisElsts/plugin-update-checker/blob/master/license.txt).
 
 ## 📝 License
 
 Copyright © 2020 [Umami Ware](https://github.com/umami-ware).<br />
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Acrode Cookie Notice</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/umami-ware/acrode-cookie-notice" property="cc:attributionName" rel="cc:attributionURL">Umami Ware GmbH & Co. KG</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="https://umami-ware.com" rel="cc:morePermissions">https://umami-ware.com</a>.
+
+This plugin uses [Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker/). Please see [license.txt](https://github.com/YahnisElsts/plugin-update-checker/blob/master/license.txt).
