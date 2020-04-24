@@ -11,9 +11,9 @@ To keep everything as clean as possible this plugin does not have any external d
 You want to write your own CSS? Sure, just write your own and the default will not even be loaded.
 
 ## ✅&nbsp; Requirements
-Cookie Notice requires:
-⋅⋅* **WordPress Instlattion with version 5.2 or higher**
-⋅⋅* **PHP version higher or equal to 7.2**
+Cookie Notice requires:\
+* **WordPress Instlattion with version 5.2 or higher**
+* **PHP version higher or equal to 7.2**
 
 
 ## 🚀&nbsp; Installation and Documentation
