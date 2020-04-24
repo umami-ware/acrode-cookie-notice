@@ -65,8 +65,8 @@ We are committed to a fully transparent development process and **highly appreci
 
 ### Submitting сhanges
 
-* Open a new issue in the [GitHub Issue Tracker](https://github.com/umami-ware/cookie-notice/issues).
-* Fork and/or clone this repository using `https://github.com/umami-ware/cookie-notice/.git`.
+* Open a new issue in the [GitHub Issue Tracker](https://github.com/umami-ware/acrode-cookie-notice/issues).
+* Fork and/or clone this repository using `https://github.com/umami-ware/acrode-cookie-notice.git`.
 * Make changes.
 * Check for any errors and test everything.
 * If there are no errors, submit a pull request to master branch using [GitHub Compare](https://github.com/umami-ware/acrode-cookie-notice/compare/), referencing any issues it addresses.
