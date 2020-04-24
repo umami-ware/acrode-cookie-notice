@@ -26,7 +26,7 @@ Cookie Notice requires:
 * PHP version higher or equal to 7.2
 
 
-## 🚀&nbsp; Installation and Documentation
+## 🚀&nbsp; Installation & Documentation
 
 
   
@@ -68,7 +68,7 @@ We are committed to a fully transparent development process and **highly appreci
 Please ⭐️ this repository if this project helped you!
 
 
-## 📝 License
+## 📝 License & Credits
 
 Copyright © 2020 [Umami Ware](https://github.com/umami-ware).<br />
 
