@@ -36,12 +36,12 @@ Navigate to your `wp-content` folder and create an `acrode` folder there. Then n
 If you want to overwrite the default CSS styling create a `front.css` file in `wp-content/acrode/acrode-cookie-notice`. You can place your custom CSS code for styling the frontend layout of the cookie notice in this file. To keep the plugin as lightweight as possible, the default `front.css` will not be loaded anymore - so its necessary to handle the complete styling of cookie notice in this file.
 
 
-## :postbox:&nbsp; Have a question? Want to chat? Ran into a problem?
+## :mailbox:&nbsp; Have a question? Want to chat? Ran into a problem?
 
 We are happy to get your emails in our official [Microsoft Teams channel](mailto:fc8035ad.acrode.com@de.teams.ms)! Obviously you can always **reach out to us directly** via the [Acrode twitter account](https://twitter.com/Acrode_UW).
 
 
-## :bug:&nbsp; Found a bug? Missing a specific feature?
+## :beetle:&nbsp; Found a bug? Missing a specific feature?
 
 Feel free to **file a new issue** with a respective title and description on the the :octocat: [GitHub Issue Tracker](https://github.com/umami-ware/cookie-notice/issues) repository for this project. If you already found a solution to your problem, **we would love to review your pull request**! 
 
@@ -57,7 +57,7 @@ Here, you'll find our product roadmap — an up-to-date report of the work we're
 - [ ] Improve backend styling
 
 
-## :thumbsup:&nbsp; Contributions
+## :clap:&nbsp; Contributions
 
 We are committed to a fully transparent development process and **highly appreciate any contributions**. Contributions, issues- and feature-requests are welcome. Whether you are helping us fixing bugs, proposing new feature, improving our documentation or just leaving your review or experience will be much appreciated! :tada:
 
@@ -78,7 +78,7 @@ We will review your Pull Request as soon as possible. Thank you for your contrib
 Please :star: this repository if this project helped you. Thanks! :relaxed:
 
 
-## :page_facing_up:&nbsp; License & Credits
+## :memo:&nbsp; License & Credits
 
 Copyright © 2020 [Umami Ware](https://github.com/umami-ware).<br />
 
