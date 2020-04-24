@@ -46,7 +46,9 @@ We are happy to get your emails in our official [Microsoft Teams channel](mailto
 
 ## 🐞&nbsp; Found a bug? Missing a specific feature?
 
-Feel free to **file a new issue** with a respective title and description on the the :octocat: [GitHub Issue Tracker](https://github.com/umami-ware/cookie-notice/issues) repository for this project. If you already found a solution to your problem, **we would love to review your pull request**!
+Feel free to **file a new issue** with a respective title and description on the the :octocat: [GitHub Issue Tracker](https://github.com/umami-ware/cookie-notice/issues) repository for this project. If you already found a solution to your problem, **we would love to review your pull request**! 
+
+Please note: Before creating a pull request, test and check for any errors. If there are no errors, then commit and push.
 
 
 ## 🔨&nbsp; Roadmap
