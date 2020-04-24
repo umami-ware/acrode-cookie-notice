@@ -2,8 +2,8 @@
 > Especially from developers for developers.
 
 ![GitHub issues](https://img.shields.io/github/issues/umami-ware/acrode-cookie-notice)
-[![Badges](https://img.shields.io/badge/wordpress-%5E5.2-brightgreen)](https://wordpress.org)
-![Badges](https://img.shields.io/badge/php-%5E7.2-brightgreen)
+[![Badges](https://img.shields.io/badge/wordpress-%5E5.2-lightgrey)](https://wordpress.org)
+![Badges](https://img.shields.io/badge/php-%5E7.2-lightgrey)
 [![Badges](https://img.shields.io/github/downloads/umami-ware/acrode-cookie-notice/total)](https://github.com/umami-ware/acrode-cookie-notice/archive/stable.zip)
 [![Badges](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-blue)](https://github.com/umami-ware/acrode-cookie-notice/blob/master/LICENSE.md)
 
