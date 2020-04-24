@@ -49,7 +49,7 @@ We are happy to get your emails in our official [Microsoft Teams channel](mailto
 Feel free to **file a new issue** with a respective title and description on the the :octocat: [GitHub Issue Tracker](https://github.com/umami-ware/cookie-notice/issues) repository for this project. If you already found a solution to your problem, **we would love to review your pull request**!
 
 
-## 💎&nbsp; Roadmap
+## 🔨&nbsp; Roadmap
 - [x] ~~Trigger Cookie.js file generation after update~~
 - [x] ~~Move SVG and heading text into admin area~~
 - [ ] Improve backend styling
