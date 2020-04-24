@@ -1,11 +1,10 @@
-# Acrode Cookie Notice for WordPress
-> Especially from developers for developers.
-
 ![GitHub issues](https://img.shields.io/github/issues/umami-ware/acrode-cookie-notice)
 [![Badges](https://img.shields.io/github/downloads/umami-ware/acrode-cookie-notice/total)](https://github.com/umami-ware/acrode-cookie-notice/releases/latest)
 [![Badges](https://img.shields.io/badge/wordpress-%5E5.2-lightgrey)](https://wordpress.org)
 ![Badges](https://img.shields.io/badge/php-%5E7.1-lightgrey)
 [![Badges](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-blue)](https://github.com/umami-ware/acrode-cookie-notice/blob/master/LICENSE.md)
+# Acrode Cookie Notice for WordPress
+> Especially from developers for developers.
 
 
 Acrode Cookie Notice allows you to elegantly inform users that your site uses cookies. This plugin also helps website owners to comply with the EU cookie laws.
