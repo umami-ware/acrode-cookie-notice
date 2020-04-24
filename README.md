@@ -2,13 +2,13 @@
 
 ## 🥇&nbsp; Features
 - [x] GDPR and ePrivacy compliant
-⋅⋅⋅The privacy settings allow your users to easily enable and disable cookies. By giving your users the ability to accept or reject specific cookies or cookie groups, their data can be protected and stored in a targeted manner.
+The privacy settings allow your users to easily enable and disable cookies. By giving your users the ability to accept or reject specific cookies or cookie groups, their data can be protected and stored in a targeted manner.
 - [x] Super Lightweight (~7,8kb)
-⋅⋅⋅We want to keep it simple as possible so it does only contain whats really necessary to function.
+We want to keep it simple as possible so it does only contain whats really necessary to function.
 - [x] No dependencies
-⋅⋅⋅To keep everything as clean as possible this plugin does not have any external dependencies - not even jQuery!
+To keep everything as clean as possible this plugin does not have any external dependencies - not even jQuery!
 - [x] Easily customizable for developers
-⋅⋅⋅You want to write your own CSS? Sure, just write your own and the default will not even be loaded.
+You want to write your own CSS? Sure, just write your own and the default will not even be loaded.
 
 ## ✅&nbsp; Requirements
 Cookie Notice requires:
