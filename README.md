@@ -11,7 +11,7 @@ To keep everything as clean as possible this plugin does not have any external d
 You want to write your own CSS? Sure, just write your own and the default will not even be loaded.
 
 ## ✅&nbsp; Requirements
-Cookie Notice requires:\
+Cookie Notice requires:
 * **WordPress Instlattion with version 5.2 or higher**
 * **PHP version higher or equal to 7.2**
 
@@ -23,9 +23,9 @@ Cookie Notice requires:\
 ### Customization
 You are able to customize the styling of the plugin. For this you can write your own CSS styling for the cookie notice.
 
-1. Create folder structure to overwrite/extend defaults\
+1. **Create folder structure to overwrite/extend defaults**\
 Navigate to your wp-content folder and create an acrode folder there. Then navigate to this folder and create a folder acrode-cookie-notice. In this folder all files for your custom configuration are placed.
-2. Overwrite styling\
+2. **Overwrite styling**\
 If you want to overwrite the default CSS styling create a front.css file in wp-content/acrode/acrode-cookie-notice. You can place your custom CSS code for styling the frontend layout of the cookie notice in this file. To keep the plugin as lightweight as possible, the default front.css will not be loaded anymore - so its necessary to handle the complete styling of cookie notice in this file.
 
 
@@ -41,6 +41,7 @@ Feel free to **file a new issue** with a respective title and description on the
 
 ## 💎&nbsp; Roadmap
 - [x] ~~Trigger Cookie.js file generation after update~~
+- [x] ~~Move SVG and heading text into admin area~~
 - [ ] Improve backend styling
 
 
