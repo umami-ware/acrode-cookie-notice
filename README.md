@@ -6,6 +6,9 @@ Cookie Notice requires a **WordPress Instlattion with version X.X or higher** an
 
 ## 🚀&nbsp; Installation and Documentation
 
+
+  
+### Customization
 To overwrite Settings and styles:
 wp-content/acrode/acrode-cookie-notice
 1. settings.php
@@ -13,9 +16,6 @@ wp-content/acrode/acrode-cookie-notice
   $acIconSvg = '';
 2. front.css
   To replace original front.css
-  
-### Customization
-
 
 
 ## 📫&nbsp; Have a question? Want to chat? Ran into a problem?
