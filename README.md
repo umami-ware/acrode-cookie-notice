@@ -15,7 +15,6 @@ wp-content/acrode/acrode-cookie-notice
   To replace original front.css
   
 ### Customization
-When plugin is added to the page, it starts to block all cookies until user accepts cookies. Group cookies from the group chosen will be accepted, all other cookies will be blocked.
 
 
 
