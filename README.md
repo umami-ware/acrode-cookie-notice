@@ -12,6 +12,8 @@ Acrode Cookie Notice allows you to elegantly inform users that your site uses co
 ## :trophy:&nbsp; Features
 - [x] **GDPR and ePrivacy compliant**\
 The privacy settings allow your users to easily enable and disable cookies. By giving your users the ability to accept or reject specific cookies or cookie groups, their data can be protected and stored in a targeted manner.
+- [x] **Supports all latest browsers**\
+We make sure that the latest version of every modern Browser is supported (Google Chrome, Mozilla Firefox, Safari, Opera, Microsoft Edge).
 - [x] **Super lightweight (~7,8 kb)**\
 We want to keep it as simple as possible, so it only contains, what really is necessary for the function.
 - [x] **No Dependencies**\
