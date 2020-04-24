@@ -8,13 +8,13 @@
 [![Badges](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-blue)](https://github.com/umami-ware/acrode-cookie-notice/blob/master/LICENSE.md)
 
 
-Acrode Cookie Notice allows you to elegantly inform users that your site uses cookies. This plugin also helps website owners to comply with the EU cookie law.
+Acrode Cookie Notice allows you to elegantly inform users that your site uses cookies. This plugin also helps website owners to comply with the EU cookie laws.
 
 ## 🥇&nbsp; Features
 - [x] **GDPR and ePrivacy compliant**\
 The privacy settings allow your users to easily enable and disable cookies. By giving your users the ability to accept or reject specific cookies or cookie groups, their data can be protected and stored in a targeted manner.
 - [x] **Super lightweight (~7,8 kb)**\
-We want to keep it simple as possible so it does only contain whats really necessary to function.
+We want to keep it as simple as possible, so it only contains, what really is necessary for the function.
 - [x] **No Dependencies**\
 To keep everything as clean as possible this plugin does not have any external dependencies - not even jQuery!
 - [x] **Easily customizable for developers**\
@@ -22,8 +22,8 @@ You want to write your own CSS? Sure, just write your own and the default will n
 
 ## ✅&nbsp; Requirements
 Cookie Notice requires:
-* **WordPress installation with version 5.2 or higher**
-* **PHP version higher or equal to 7.2**
+* WordPress installation with version 5.2 or higher
+* PHP version higher or equal to 7.2
 
 
 ## 🚀&nbsp; Installation and Documentation
@@ -34,9 +34,9 @@ Cookie Notice requires:
 You are able to customize the styling of the plugin. For this you can write your own CSS styling for the cookie notice.
 
 1. **Create folder structure to overwrite/extend defaults**\
-Navigate to your wp-content folder and create an acrode folder there. Then navigate to this folder and create a folder acrode-cookie-notice. In this folder all files for your custom configuration are placed.
+Navigate to your `wp-content` folder and create an `acrode` folder there. Then navigate to this folder and create a folder `acrode-cookie-notice`. In this folder all files for your custom configuration are placed.
 2. **Overwrite styling**\
-If you want to overwrite the default CSS styling create a front.css file in wp-content/acrode/acrode-cookie-notice. You can place your custom CSS code for styling the frontend layout of the cookie notice in this file. To keep the plugin as lightweight as possible, the default front.css will not be loaded anymore - so its necessary to handle the complete styling of cookie notice in this file.
+If you want to overwrite the default CSS styling create a `front.css` file in `wp-content/acrode/acrode-cookie-notice`. You can place your custom CSS code for styling the frontend layout of the cookie notice in this file. To keep the plugin as lightweight as possible, the default `front.css` will not be loaded anymore - so its necessary to handle the complete styling of cookie notice in this file.
 
 
 ## 📫&nbsp; Have a question? Want to chat? Ran into a problem?
