@@ -9,13 +9,12 @@ Cookie Notice requires a **WordPress Instlattion with version X.X or higher** an
 
   
 ### Customization
-To overwrite Settings and styles:
-wp-content/acrode/acrode-cookie-notice
-1. settings.php
-  $acDialogHeadingName = 'Cookie-Einstellungen';
-  $acIconSvg = '';
-2. front.css
-  To replace original front.css
+You are able to customize the styling of the plugin. For this you can write your own CSS styling for the cookie notice.
+
+1. Create folder structure to overwrite/extend defaults
+⋅⋅⋅Navigate to your wp-content folder and create an acrode folder there. Then navigate to this folder and create a folder acrode-cookie-notice. In this folder all files for your custom configuration are placed.
+2. Overwrite styling
+⋅⋅⋅If you want to overwrite the default CSS styling create a front.css file in wp-content/acrode/acrode-cookie-notice. You can place your custom CSS code for styling the frontend layout of the cookie notice in this file. To keep the plugin as lightweight as possible, the default front.css will not be loaded anymore - so its necessary to handle the complete styling of cookie notice in this file.
 
 
 ## 📫&nbsp; Have a question? Want to chat? Ran into a problem?
