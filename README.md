@@ -9,7 +9,7 @@
 
 Acrode Cookie Notice allows you to elegantly inform users that your site uses cookies. This plugin also helps website owners to comply with the EU cookie laws.
 
-## 🥇&nbsp; Features
+## 🎨&nbsp; Features
 - [x] **GDPR and ePrivacy compliant**\
 The privacy settings allow your users to easily enable and disable cookies. By giving your users the ability to accept or reject specific cookies or cookie groups, their data can be protected and stored in a targeted manner.
 - [x] **Super lightweight (~7,8 kb)**\
@@ -67,8 +67,8 @@ We are committed to a fully transparent development process and **highly appreci
 * Fork and clone the repository.
 * Create a new branch based off the `master` branch.
 * Make changes.
-* Test everything .
-* Submit a pull request, referencing any issues it addresses.
+* Check for any errors and test everything.
+* If there are no errors, submit a pull request, referencing any issues it addresses.
 
 We will review your Pull Request as soon as possible. Thank you for contributing!
 
