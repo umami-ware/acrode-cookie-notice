@@ -57,7 +57,7 @@ Feel free to **file a new issue** with a respective title and description on the
 
 ## 🤝&nbsp; Contributions
 
-We are committed to a fully transparent development process and **highly appreciate any contributions**. Contributions, issues and feature requests are welcome. Whether you are helping us fixing bugs, proposing new feature, improving our documentation.... 🎉
+We are committed to a fully transparent development process and **highly appreciate any contributions**. Contributions, issues- and feature-requests are welcome. Whether you are helping us fixing bugs, proposing new feature, improving our documentation or just leaving your review or experience will be much appreciated! 🎉
 
 
 ## ❤️&nbsp; Show your support
