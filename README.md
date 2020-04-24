@@ -1,5 +1,6 @@
 # Acrode Cookie Notice for WordPress
-Acrode Cookie Notice allows you to elegantly inform users that your site uses cookies. This plugin also helps website owners to comply with the EU cookie law. Especially from developers for developers.
+> Especially from developers for developers.
+Acrode Cookie Notice allows you to elegantly inform users that your site uses cookies. This plugin also helps website owners to comply with the EU cookie law. 
 
 ## 🥇&nbsp; Features
 - [x] **GDPR and ePrivacy compliant**\
