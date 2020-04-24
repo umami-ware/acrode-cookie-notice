@@ -86,6 +86,6 @@ Copyright © 2020 [Umami Ware](https://github.com/umami-ware).<br />
 
 This plugin uses [Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker/). Please see [license.txt](https://github.com/YahnisElsts/plugin-update-checker/blob/master/license.txt). Thanks to [YahnisElsts](https://github.com/YahnisElsts/)!
 
-## :bookmark:&nbsp; Links :thanks:
+## :link:&nbsp; Links
 * [acrode.com](https://acrode.com)
 * [umami-ware.com](https://umami-ware.com)
