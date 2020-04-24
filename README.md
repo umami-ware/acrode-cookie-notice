@@ -70,12 +70,12 @@ We are committed to a fully transparent development process and **highly appreci
 * Check for any errors and test everything.
 * If there are no errors, submit a pull request, referencing any issues it addresses.
 
-We will review your Pull Request as soon as possible. Thank you for contributing!
+We will review your Pull Request as soon as possible. Thank you for your contribution!
 
 
 ## ❤️&nbsp; Show your support
 
-Please ⭐️ this repository if this project helped you!
+Please ⭐️ this repository if this project helped you. Thanks! :relaxed:
 
 
 ## 📝 License & Credits
