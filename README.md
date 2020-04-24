@@ -27,8 +27,6 @@ Cookie Notice requires:
 
 ## 🚀&nbsp; Installation & Documentation
 
-
-  
 ### Customization
 You are able to customize the styling of the plugin. For this you can write your own CSS styling for the cookie notice.
 
@@ -47,7 +45,7 @@ We are happy to get your emails in our official [Microsoft Teams channel](mailto
 
 Feel free to **file a new issue** with a respective title and description on the the :octocat: [GitHub Issue Tracker](https://github.com/umami-ware/cookie-notice/issues) repository for this project. If you already found a solution to your problem, **we would love to review your pull request**! 
 
-Please note: Before creating a pull request, test and check for any errors. If there are no errors, then commit and push.
+Before creating a pull request, please check out our contribution guide below.
 
 
 ## 🔨&nbsp; Roadmap
@@ -62,6 +60,17 @@ Here, you'll find our product roadmap — an up-to-date report of the work we're
 ## 🤝&nbsp; Contributions
 
 We are committed to a fully transparent development process and **highly appreciate any contributions**. Contributions, issues- and feature-requests are welcome. Whether you are helping us fixing bugs, proposing new feature, improving our documentation or just leaving your review or experience will be much appreciated! 🎉
+
+### Submitting сhanges
+
+* Open a new issue in the [GitHub Issue Tracker](https://github.com/umami-ware/cookie-notice/issues).
+* Fork and clone the repository.
+* Create a new branch based off the `master` branch.
+* Make changes.
+* Test everything .
+* Submit a pull request, referencing any issues it addresses.
+
+We will review your Pull Request as soon as possible. Thank you for contributing!
 
 
 ## ❤️&nbsp; Show your support
