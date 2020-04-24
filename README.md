@@ -1,13 +1,13 @@
 # Acrode Cookie Notice for WordPress
 
 ## 🥇&nbsp; Features
-- [x] GDPR and ePrivacy compliant\
+- [x] **GDPR and ePrivacy compliant**\
 The privacy settings allow your users to easily enable and disable cookies. By giving your users the ability to accept or reject specific cookies or cookie groups, their data can be protected and stored in a targeted manner.
-- [x] Super Lightweight (~7,8kb)\
+- [x] **Super Lightweight (~7,8kb)**\
 We want to keep it simple as possible so it does only contain whats really necessary to function.
-- [x] No dependencies\
+- [x] **No dependencies**\
 To keep everything as clean as possible this plugin does not have any external dependencies - not even jQuery!
-- [x] Easily customizable for developers\
+- [x] **Easily customizable for developers**\
 You want to write your own CSS? Sure, just write your own and the default will not even be loaded.
 
 ## ✅&nbsp; Requirements
@@ -23,10 +23,10 @@ Cookie Notice requires:
 ### Customization
 You are able to customize the styling of the plugin. For this you can write your own CSS styling for the cookie notice.
 
-1. Create folder structure to overwrite/extend defaults
-⋅⋅⋅Navigate to your wp-content folder and create an acrode folder there. Then navigate to this folder and create a folder acrode-cookie-notice. In this folder all files for your custom configuration are placed.
-2. Overwrite styling
-⋅⋅⋅If you want to overwrite the default CSS styling create a front.css file in wp-content/acrode/acrode-cookie-notice. You can place your custom CSS code for styling the frontend layout of the cookie notice in this file. To keep the plugin as lightweight as possible, the default front.css will not be loaded anymore - so its necessary to handle the complete styling of cookie notice in this file.
+1. Create folder structure to overwrite/extend defaults\
+Navigate to your wp-content folder and create an acrode folder there. Then navigate to this folder and create a folder acrode-cookie-notice. In this folder all files for your custom configuration are placed.
+2. Overwrite styling\
+If you want to overwrite the default CSS styling create a front.css file in wp-content/acrode/acrode-cookie-notice. You can place your custom CSS code for styling the frontend layout of the cookie notice in this file. To keep the plugin as lightweight as possible, the default front.css will not be loaded anymore - so its necessary to handle the complete styling of cookie notice in this file.
 
 
 ## 📫&nbsp; Have a question? Want to chat? Ran into a problem?
