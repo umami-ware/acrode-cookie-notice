@@ -50,6 +50,9 @@ Feel free to **file a new issue** with a respective title and description on the
 
 
 ## 🔨&nbsp; Roadmap
+
+Here, you'll find our product roadmap — an up-to-date report of the work we're doing: a long-term plan of the goals, features, and long-term direction for the plugin. We update this every few months with the status of our progress, as well as add new future requests and ideas.
+
 - [x] ~~Trigger Cookie.js file generation after update~~
 - [x] ~~Move SVG and heading text into admin area~~
 - [ ] Improve backend styling
