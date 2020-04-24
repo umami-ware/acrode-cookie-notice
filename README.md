@@ -13,6 +13,10 @@ wp-content/acrode/acrode-cookie-notice
   $acIconSvg = '';
 2. front.css
   To replace original front.css
+  
+### Customization
+When plugin is added to the page, it starts to block all cookies until user accepts cookies. Group cookies from the group chosen will be accepted, all other cookies will be blocked.
+
 
 
 ## 📫&nbsp; Have a question? Want to chat? Ran into a problem?
