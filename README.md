@@ -36,7 +36,7 @@ Cookie Notice requires:
 3. After install, activate the plugin.
 4. You can configure the settings of the plugin in `Settings` => `Cookie Notice`.
 
-### Customization
+### Styling & Layout customization
 You are able to customize the styling of the plugin. For this you can write your own CSS styling for the cookie notice.
 
 1. **Create folder structure to overwrite/extend defaults**\
