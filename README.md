@@ -31,6 +31,11 @@ Cookie Notice requires:
 
 ## :rocket:&nbsp; Installation & Documentation
 
+1. Download the latest version of the Cookie Notice in the `release` tab.
+2. Log into the backend of your WordPress site and install the downloaded .zip
+3. After install, activate the plugin.
+4. You can configure the settings of the plugin in `Settings` => `Cookie Notice`.
+
 ### Customization
 You are able to customize the styling of the plugin. For this you can write your own CSS styling for the cookie notice.
 
