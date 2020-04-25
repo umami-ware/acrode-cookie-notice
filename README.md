@@ -19,7 +19,9 @@ We want to keep it as simple as possible, so it only contains, what really is ne
 - [x] **No Dependencies**\
 To keep everything as clean as possible this plugin does not have any external dependencies - not even jQuery!
 - [x] **Easily customizable for developers**\
+You can customize the cookie message and buttons, set cookie expiry and much more.
 You want to write your own CSS? Sure, just write your own and the default will not even be loaded.
+
 
 ## :white_check_mark:&nbsp; Requirements
 Cookie Notice requires:
