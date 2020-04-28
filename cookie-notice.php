@@ -3,7 +3,7 @@
 Plugin Name: Cookie Notice
 Plugin URI: https://github.com/umami-ware/acrode-cookie-notice
 Description: acrode Cookie Notice allows you to elegantly inform users that your site uses cookies. This plugin also helps website owners to comply with the EU cookie law.
-Version: 3.6.0
+Version: 3.6.1
 Author: acrode
 Author URI: https://acrode.com
 */
