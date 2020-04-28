@@ -26,7 +26,7 @@ You want to write your own CSS? Sure, just write your own and the default will n
 ## :white_check_mark:&nbsp; Requirements
 Cookie Notice requires:
 * WordPress installation with version 5.2 or higher
-* PHP version higher or equal to 7.2
+* PHP version higher or equal to 7.0
 
 
 ## :rocket:&nbsp; Installation & Documentation
