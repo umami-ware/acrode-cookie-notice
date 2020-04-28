@@ -12,7 +12,7 @@ Author URI: https://acrode.com
 if (!defined('ABSPATH'))
     exit;
 //
-// https://github.com/YahnisElsts/plugin-update-checker v.4.8.1
+// https://github.com/YahnisElsts/plugin-update-checker v.4.9
 require __DIR__ . '/plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
     'https://github.com/umami-ware/acrode-cookie-notice',
