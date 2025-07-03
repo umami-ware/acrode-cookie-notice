@@ -1,7 +1,6 @@
 ![GitHub issues](https://img.shields.io/github/issues/umami-ware/acrode-cookie-notice)
-[![Badges](https://img.shields.io/github/downloads/umami-ware/acrode-cookie-notice/total)](https://github.com/umami-ware/acrode-cookie-notice/releases/latest)
-[![Badges](https://img.shields.io/badge/wordpress-%5E5.2-lightgrey)](https://wordpress.org)
-![Badges](https://img.shields.io/badge/php-%5E7.0-lightgrey)
+[![Badges](https://img.shields.io/badge/wordpress-%5E5.6-lightgrey)](https://wordpress.org)
+![Badges](https://img.shields.io/badge/php-%5E8.0-lightgrey)
 [![Badges](https://img.shields.io/badge/license-CC%20BY--NC--ND%204.0-blue)](https://github.com/umami-ware/acrode-cookie-notice/blob/master/LICENSE.md)
 # Acrode Cookie Notice for WordPress
 > Especially from developers for developers.
@@ -25,8 +24,8 @@ You want to write your own CSS? Sure, just write your own and the default will n
 
 ## :white_check_mark:&nbsp; Requirements
 Cookie Notice requires:
-* WordPress installation with version 5.2 or higher
-* PHP version higher or equal to 7.0
+* WordPress installation with version 5.6 or higher
+* PHP version higher or equal to 8.0
 
 
 ## :rocket:&nbsp; Installation & Documentation
