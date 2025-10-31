@@ -3,7 +3,7 @@
 Plugin Name: Cookie Notice
 Plugin URI: https://github.com/umami-ware/acrode-cookie-notice
 Description: acrode Cookie Notice allows you to elegantly inform users that your site uses cookies. This plugin also helps website owners to comply with the EU cookie law.
-Version: 3.7.0
+Version: 3.8.0
 Author: acrode
 Author URI: https://acrode.com
 */
@@ -17,7 +17,7 @@ require __DIR__ . '/plugin-update-checker/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $myUpdateChecker = PucFactory::buildUpdateChecker(
-    'https://github.com/umami-ware/acrode-cookie-notice',
+    'https://github.com/JohannesArtmeier/acrode-cookie-notice',
     __FILE__, //Full path to the main plugin file or functions.php.
     'acrode-cookie-notice'
 );
